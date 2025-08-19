@@ -1,2 +1,3 @@
 class Book < ApplicationRecord
-end
+    has_one_attached :book_image
+end 

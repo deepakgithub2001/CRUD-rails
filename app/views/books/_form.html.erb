@@ -1,0 +1,18 @@
+<%= form_with model: @book, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_field :body %>
+  </p>
+
+  <p>
+   <%= form.label :book_image%>
+   <%= form.file_field :book_image%>
+  </p>
+
+  <%= form.submit "Create Book" %>
+  <% end %>

@@ -1,17 +1,3 @@
 <h1> New Book</h1>
-
-<%= form_with model: @book, local: true do |form| %>
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
-
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_field :body %>
-  </p>
-
-  <%= form.submit "Create Book" %>
-  <% end %>
-
+<%= render "form" %>
 <%= link_to "Back", books_path %>

@@ -63,3 +63,4 @@ group :test do
 end
 
 gem 'fast_jsonapi'
+gem 'devise'

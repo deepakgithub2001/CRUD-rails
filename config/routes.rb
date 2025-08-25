@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :articles
  get "up" => "rails/health#show", as: :rails_health_check
  root 'books#index'
@@ -20,3 +21,4 @@ Rails.application.routes.draw do
   delete 'articles/:id', to: "articles#destroy"
  end
 end
+

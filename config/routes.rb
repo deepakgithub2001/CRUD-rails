@@ -9,4 +9,14 @@ Rails.application.routes.draw do
  patch 'books/:id', to: 'books#update'
  delete 'books/:id', to: 'books#destroy'
  get 'books', to: 'books#index'
+ 
+ namespace :api do 
+  # resources :articles
+  get 'articles' , to: "articles#index"
+  post 'articles', to: "articles#create"
+  get 'detail_article/:id', to: "articles#detail_article"
+  put 'articles/:id', to: "articles#update"
+  patch 'articles/:id', to: "articles#update"
+  delete 'articles/:id', to: "articles#destroy"
+ end
 end
